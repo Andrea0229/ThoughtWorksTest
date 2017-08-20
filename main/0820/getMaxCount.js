@@ -10,28 +10,28 @@ function getMaxCount(str) {
     let temp = [];
     let max = 1;
 
-    max[str[0]] = 1;
-    for(let i=0; i<str.length; i++){
-        if(temp.indexOf(str[i]) <0 ){
+    for (let i = 0; i < str.length; i++) {
+        if (temp.indexOf(str[i]) < 0) {
             temp.push(str[i]);
             result[str[i]] = 1;
         }
-        else{
-            result[str[i]]  += 1;
-             if(result[str[i]] > max){
+        else {
+            result[str[i]] += 1;
+            if (result[str[i]] > max) {
                 max = result[str[i]];
             }
         }
     }
+    return getMaxStr(result, max);
+}
 
+function getMaxStr(result, max) {
     let maxResult = {};
-    for(let key in result){
-        if(result[key] === max){
+    for (let key in result) {
+        if (result[key] === max) {
             maxResult[key] = result[key]
         }
     }
-
-    console.log(maxResult)
     return maxResult;
 }
 
