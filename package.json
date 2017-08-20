@@ -1,0 +1,23 @@
+{
+  "name": "ThoughtWorksTest",
+  "version": "1.0.0",
+  "description": "jasmine test",
+  "main": "index.js",
+  "scripts": {
+    "test": "node run-tests.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Andrea0229/ThoughtWorksTest.git"
+  },
+  "keywords": [],
+  "author": "CPY-ThoughtWorks",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Andrea0229/ThoughtWorksTest/issues"
+  },
+  "homepage": "https://github.com/Andrea0229/ThoughtWorksTest#readme",
+  "devDependencies": {
+    "jasmine": "^2.6.0"
+  }
+}
