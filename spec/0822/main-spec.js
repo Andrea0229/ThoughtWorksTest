@@ -20,4 +20,14 @@ describe("两个数组的交集", function () {
 
         expect(expect_arr).toEqual(result);
     })
+
+    it("['asd','we','asd','ew'] & ['asd','we']",function () {
+        let arr1 = ['asd','we','asd','ew'];
+        let arr2 = ['asd','asd','we'];
+        let expect_arr = ['asd', 'asd', 'we'  ];
+
+        result = unionArr(arr1, arr2);
+
+        expect(expect_arr).toEqual(result);
+    })
 })
