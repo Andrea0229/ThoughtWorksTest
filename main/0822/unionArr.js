@@ -6,28 +6,27 @@
  * @param arr2
  */
 
-function unionArr(arr1, arr2){
+function unionArr(arr1, arr2) {
     let result = [];
-    let [i,j] = [0, 0];
+    let [i, j] = [0, 0];
 
     arr1 = arr1.sort();
     arr2 = arr2.sort();
-    while(i<arr1.length && j<arr2.length){
-        if(arr1[i] < arr2[j]){
+    while (i < arr1.length && j < arr2.length) {
+        if (arr1[i] < arr2[j]) {
             i++;
         }
-        else if(arr1[i] > arr2[j]){
+        else if (arr1[i] > arr2[j]) {
             j++;
         }
-        else{
+        else {
             result.push(arr1[i]);
             i++;
             j++
         }
     }
 
-    console.log("\n"+arr1 + "与" + arr2)
-    console.log("交集有："+ result);
     return result;
 }
+
 module.exports = unionArr;
