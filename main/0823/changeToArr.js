@@ -13,7 +13,7 @@ function changeToArr(arr) {
         tmp = result.find(item => {
             return item instanceof Array;
         });
-    }console.log(result);
+    }
     return result;
 }
 
