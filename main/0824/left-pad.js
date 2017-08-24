@@ -10,7 +10,12 @@
  */
 
 function left_pad(str, count, ch){
-    return Array(count-str.length+1).join(ch)+str;
+    // return Array(count-str.length+1).join(ch)+str;
+    //优化一下
+    if (!ch && ch !== 0) ch = ' ';
+    let len = count - str.length + 1;
+    return Array(len).join(ch) + str;
+
 }
 
 module.exports = left_pad;
