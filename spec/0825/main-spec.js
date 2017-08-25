@@ -1,5 +1,5 @@
 
-const main = require("../../main/0825/main");
+const main = require("../../main/0825/main01");
 
 describe("",function () {
     it("",function () {
@@ -8,6 +8,4 @@ describe("",function () {
         let expect_arr = [1,3,12,0,0];
         expect(expect_arr).toEqual(main(arr,target));
     })
-
-
 })
