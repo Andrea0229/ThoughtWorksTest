@@ -11,7 +11,7 @@ function main(arr, target) {
     /** 不新创建数组 */
     let k = 0;
     for(let i in arr){
-        if(arr[i] !== target){          //若元素不为0，则将他往前移动k个位置
+        if(arr[i] !== target){//若元素不为0，则将他往前移动k个位置
             arr[i-k] = arr[i];
             arr[i] = target;
         }else{
