@@ -26,6 +26,14 @@ describe("组合种类",function () {
 
         expect(expect_count).toEqual(result);
     })
+    it("11111",function () {
+        let num = 111111;
+        main(num);
+        let expect_count = 13;
+        let result = main(num);
+
+        expect(expect_count).toEqual(result);
+    })
 
 
 })
